@@ -46,7 +46,11 @@ const DashboardDataContext = createContext<DashboardDataContextType>({
 });
 
 async function getRatesByUserId(id: string, token: string): Promise<RatesApiData | null> {
+<<<<<<< HEAD
 const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/prestador/get-preco-hora/${id}`, {
+=======
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/prestador/get-preco-hora/${id}`, {
+>>>>>>> dev
     method: "GET",
     headers: {
       "Content-Type": "application/json",
